@@ -820,7 +820,7 @@ nav a:hover,
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 80px 0 150px 0;
+  margin: 80px 0 0 0;
   height: 500px;
 
   & img {
@@ -1099,4 +1099,17 @@ nav a:hover,
   .hover {
     display: none;
   }
+  .mobiles, .parent{
+    flex-direction: column;
+  }
+  .bg-photo2{
+    background: url("../image/bgwithqrres.avif")center/cover;
+    height: 100vh;
+    text-align: center;
+  }
+  .text button{
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .main-text button{margin-bottom: -40px;}
 }
