@@ -4,9 +4,9 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   font-family: "SamsungSharpSans", sans-serif !important;
-  /* А вот здесь уже пишем запасной шрифт */
   font-weight: normal;
 }
 
@@ -15,83 +15,139 @@ body {
   margin: 0 auto;
 }
 
-.flex {
+nav ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
+  & li {
+    margin-right: 5px;
+  }
 }
 
-
-
- nav ul li{
-  position: relative!important;
-  
-  
+nav ul li {
+  position: relative !important;
 }
-nav ul li:hover .dropdown{
+
+nav ul li:hover .dropdown {
   display: flex;
 }
 
+.dropphoto img {
+  width: 100px;
+  object-fit: contain;
+}
+.dropdown span{
+  background-color: red;
+   border-radius: 40px;
+   padding: 5px;
+   font: 700 13px "SamsungSharpSans";
+   margin-left: 4px;
+   color: #fff;
+}
+.dropdown span[type="blue"]{
+  background-color: blue;
+}
 
-.dropdown{
+.dropdown ul {
+  display: flex !important;
+  justify-content: start !important;
+  align-items: start !important;
+  flex-direction: column;
+  width: 140px !important;
+  margin-right: 25px;
+
+  & a {
+    font-size: 13px;
+  }
+  & li{margin-bottom: 10px;}
+}
+
+.dropphoto:nth-child(3),
+.dropphoto:nth-child(4) {
+  margin-top: 40px;
+}
+
+
+.dropdown {
   display: none;
-  position: absolute!important;
-  z-index: 7!important;
-  top: 105%!important;
-  left: -180%!important;
+  position: absolute !important;
+  z-index: 7 !important;
+  top: 107% !important;
+  left: -180% !important;
   background-color: #fff;
   border: 1px solid transparent;
   border-bottom-left-radius: 35px;
   border-bottom-right-radius: 35px;
-  padding: 10px;
-  & h2{
+  padding: 30px;
+
+  & h2 {
     font-size: 18px;
     margin-bottom: 10px;
+    font-weight: 600;
   }
-  & a{
+
+  & h3 {
+    width: 200px !important;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 0 15px 15px;
+  }
+
+  & a {
     font-size: 14px;
     font-weight: 400;
     opacity: 0.6;
     padding: 0;
+    margin: 0;
     border: transparent;
     margin-bottom: 10px;
   }
-  & a:hover{
+
+  & a:hover {
     color: #000;
     opacity: 1;
+    margin: 0;
     background-color: #fff;
     border: transparent;
     padding: 0;
   }
 }
 
-
-
-
-
 .navbar {
-  padding-top: 15px;
   background-color: #fff;
 }
 
 .logo img {
-  width: 150px;
-  height: 25px;
+  width: 120px;
+  height: 22px;
 }
 
 nav {
-  width: 45%;
+  width: 40% !important;
+  padding-top: 14px;
 }
 
 .icons {
-  width: 26%;
+  width: 34% !important;
+  padding-top: 14px;
+
+  & ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & li {
+    margin-right: 5px;
+  }
 }
 
 nav a,
 .icons a {
   text-decoration: none;
   color: #000;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   transition: .3s;
   border: 1px solid transparent;
@@ -118,7 +174,6 @@ nav a:hover,
 
 .fixed p {
   position: fixed;
-
   right: -40px;
   font-weight: 600;
   top: 400px;
@@ -142,7 +197,6 @@ nav a:hover,
 
 .swiper-slide {
   height: 100vh;
-  /* Высота на весь экран */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,13 +277,11 @@ nav a:hover,
   background-repeat: no-repeat;
 }
 
-/* Цвет стрелочек (можно менять под дизайн) */
 .swiper-button-next,
 .swiper-button-prev {
   color: #007aff;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
-
 
 /* text slider */
 
@@ -296,8 +348,6 @@ nav a:hover,
   text-decoration: none;
 }
 
-
-
 .text button:hover,
 .mobile a:hover,
 .mobile-grid a:hover,
@@ -332,7 +382,6 @@ nav a:hover,
   text-align: center;
   margin-bottom: 35px;
 }
-
 
 .all-mobiles {
   display: flex;
@@ -901,10 +950,10 @@ nav a:hover,
   border-top-left-radius: 40px;
 }
 
-.keywords div{
+.keywords div {
   flex-wrap: wrap;
- align-items: center;
- justify-content: center;
+  align-items: center;
+  justify-content: center;
   display: flex;
   gap: 10px;
 }
@@ -1025,7 +1074,8 @@ nav a:hover,
   object-fit: contain;
   margin-bottom: 10px;
 }
-.slider-imgh{
+
+.slider-imgh {
   display: none;
 }
 
@@ -1041,11 +1091,12 @@ nav a:hover,
     border-color: transparent;
   }
 
-  .footer2 ul{
+  .footer2 ul {
     flex-wrap: wrap;
     text-align: center;
   }
-  .hover{
+
+  .hover {
     display: none;
   }
 }
