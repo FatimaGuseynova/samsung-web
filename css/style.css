@@ -732,12 +732,10 @@ nav a:hover,
   overflow-x: auto;
   /* Позволяет скроллить */
   scroll-snap-type: x mandatory;
-  /* Магнитный эффект: по одной карточке */
   scroll-behavior: smooth;
   /* Плавный переход */
   gap: 15px;
   scrollbar-width: none;
-  /* Скрываем полосу в Firefox */
 }
 
 .slider-container::-webkit-scrollbar {
@@ -746,7 +744,6 @@ nav a:hover,
 
 .card {
   flex: 0 0 calc(100% / 4 - 20px);
-  /* 4 карточки на слайде */
   scroll-snap-align: start;
   /* К чему примагничиваем (к началу) */
   user-select: none;
@@ -918,7 +915,7 @@ nav a:hover,
 .swiper-slide7 {
   background: url("../img/hover1.webp")center/cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 60vh;
   border: 1px solid transparent;
   border-radius: 30px;
 
@@ -927,7 +924,7 @@ nav a:hover,
 .swiper-slide8 {
   background: url("..//img/hover2.avif")center/cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 60vh;
   border: 1px solid transparent;
   border-radius: 30px;
 }
@@ -935,7 +932,7 @@ nav a:hover,
 .swiper-slide9 {
   background: url("..//img/hover3.avif")center/cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 60vh;
   border: 1px solid transparent;
   border-radius: 30px;
 }
@@ -943,15 +940,14 @@ nav a:hover,
 .swiper-slide10 {
   background: url("..//img/hover4.avif")center/cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 60vh;
   border: 1px solid transparent;
   border-radius: 30px;
 }
-
 .swiper-slide11 {
   background: url("..//img/hover5.avif")center/cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 60vh;
   border: 1px solid transparent;
   border-radius: 30px;
 }
@@ -1028,7 +1024,7 @@ nav a:hover,
 
 .footer {
   border: 1px solid #a5a5a5;
-  padding: 15px 50px;
+  padding: 15px 40px;
   border-left: transparent;
 }
 
@@ -1109,13 +1105,35 @@ nav a:hover,
   display: none;
 }
 
+@media (max-width:1280px){
+  .icons li,
+  nav {
+    display: none;
+  }
+}
+@media(max-width:925px){
+  .footer {
+  padding: 15px 10px;
+}
+
+}
+
 @media (max-width:770px) {
+  .slider3-text {
+    text-align: center;
+    & h2{
+      font-size: 30px;
+    }
+  }
 
   .all-footer,
   .footer2 {
     flex-direction: column;
     text-align: center;
   }
+  .accordion-button {
+  width: 100% !important;
+}
 
   .footer {
     border-color: transparent;
@@ -1178,7 +1196,7 @@ nav a:hover,
     background: url("../image/mob3.webp")center/contain;
     height: 100vh;
     background-repeat: no-repeat;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     text-align: center;
 
@@ -1192,7 +1210,7 @@ nav a:hover,
     background: url("../image/mob4.webp")center/contain;
     height: 100vh;
     background-repeat: no-repeat;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     text-align: center;
 
@@ -1206,7 +1224,7 @@ nav a:hover,
     background: url("../image/mob2.webp")center/contain;
     height: 100vh;
     background-repeat: no-repeat;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     text-align: center;
 
@@ -1218,11 +1236,12 @@ nav a:hover,
 
   .swiper-slide4 {
     background-color: transparent;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     text-align: center;
     height: 82vh;
     top: 0;
+
     & a,
     h6 {
       margin: 0 auto;
@@ -1242,7 +1261,7 @@ nav a:hover,
     background: url("../image/mob1.webp")center/contain;
     height: 100vh;
     background-repeat: no-repeat;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     text-align: center;
 
@@ -1254,9 +1273,9 @@ nav a:hover,
 
   .swiper-slide6 {
     background: url("../image/mob6.webp")center/contain;
-    height: 100vh;
+    height: 90vh;
     background-repeat: no-repeat;
-    justify-content: start;
+    justify-content: center;
     align-items: start;
     text-align: center;
 
