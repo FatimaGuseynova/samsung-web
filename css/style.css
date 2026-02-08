@@ -37,15 +37,17 @@ nav ul li:hover .dropdown {
   width: 100px;
   object-fit: contain;
 }
-.dropdown span{
+
+.dropdown span {
   background-color: red;
-   border-radius: 40px;
-   padding: 5px;
-   font: 700 13px "SamsungSharpSans";
-   margin-left: 4px;
-   color: #fff;
+  border-radius: 40px;
+  padding: 5px;
+  font: 700 10px "SamsungSharpSans";
+  margin-left: 4px;
+  color: #fff;
 }
-.dropdown span[type="blue"]{
+
+.dropdown span[type="blue"] {
   background-color: blue;
 }
 
@@ -60,7 +62,10 @@ nav ul li:hover .dropdown {
   & a {
     font-size: 13px;
   }
-  & li{margin-bottom: 10px;}
+
+  & li {
+    margin-bottom: 10px;
+  }
 }
 
 .dropphoto:nth-child(3),
@@ -167,7 +172,6 @@ nav a:hover,
   font-size: 20px;
 }
 
-/* feedback */
 .fixed {
   position: absolute;
 }
@@ -249,7 +253,6 @@ nav a:hover,
 .swiper-slide4 img {
   transform: scale(1.8);
   object-position: right bottom;
-
   width: 600px;
   object-fit: cover;
   position: absolute;
@@ -330,7 +333,6 @@ nav a:hover,
   text-decoration: none;
   color: #000;
   width: max-content;
-
 }
 
 .text button,
@@ -411,7 +413,6 @@ nav a:hover,
   transform: translateY(20px);
   border-radius: 20px;
   overflow: hidden;
-
 }
 
 .mobile,
@@ -420,7 +421,6 @@ nav a:hover,
   width: 100%;
 
 }
-
 
 .mobile a,
 .mobile-grid a {
@@ -494,7 +494,6 @@ nav a:hover,
 
 /* grid slider 2 */
 
-
 .parent {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -526,7 +525,6 @@ nav a:hover,
 
   & .mobile-grid {
     height: 400px;
-    width: 350px;
     align-items: center;
     justify-content: center;
   }
@@ -539,7 +537,6 @@ nav a:hover,
 
   & .mobile-grid {
     height: 400px;
-    width: 350px;
     align-items: center;
     justify-content: center;
   }
@@ -552,7 +549,6 @@ nav a:hover,
 
   & .mobile-grid {
     height: 400px;
-    width: 350px;
     align-items: center;
     justify-content: center;
   }
@@ -565,7 +561,6 @@ nav a:hover,
 
   & .mobile-grid {
     height: 400px;
-    width: 350px;
     align-items: center;
     justify-content: center;
   }
@@ -680,8 +675,6 @@ nav a:hover,
 
 }
 
-/* bg-photo2 */
-
 .bg-photo2 {
   background: url("../img/bgbgbg.webp")center/cover;
   height: 50vh;
@@ -747,7 +740,6 @@ nav a:hover,
   /* Скрываем полосу в Firefox */
 }
 
-/* Скрываем полосу прокрутки в Chrome/Safari */
 .slider-container::-webkit-scrollbar {
   display: none;
 }
@@ -760,15 +752,9 @@ nav a:hover,
   user-select: none;
 }
 
-/* Адаптив для второго слайда (например, где 3 карточки) */
 .second-slider .card {
   flex: 0 0 calc(100% / 3 - 20px);
 }
-
-
-
-
-
 
 /* slider 2.2 */
 
@@ -828,7 +814,6 @@ nav a:hover,
   }
 }
 
-/* bg-photo3 */
 .bg-photo3 {
   background: url('../img/bgbg.avif')40% 30%/cover;
   height: 60vh;
@@ -926,6 +911,51 @@ nav a:hover,
   display: initial;
 }
 
+.dnone {
+  display: none;
+}
+
+.swiper-slide7 {
+  background: url("../img/hover1.webp")center/cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border: 1px solid transparent;
+  border-radius: 30px;
+
+}
+
+.swiper-slide8 {
+  background: url("..//img/hover2.avif")center/cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+
+.swiper-slide9 {
+  background: url("..//img/hover3.avif")center/cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+
+.swiper-slide10 {
+  background: url("..//img/hover4.avif")center/cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+
+.swiper-slide11 {
+  background: url("..//img/hover5.avif")center/cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+
 /* search */
 .inline {
   display: flex;
@@ -967,7 +997,7 @@ nav a:hover,
   transition: .4s;
 }
 
-.keywords span:hover {
+.keywords p:hover {
   background-color: #f3f3f3;
 }
 
@@ -1096,20 +1126,143 @@ nav a:hover,
     text-align: center;
   }
 
-  .hover {
-    display: none;
-  }
-  .mobiles, .parent{
+  .mobiles,
+  .parent {
     flex-direction: column;
   }
-  .bg-photo2{
+
+  .bg-photo2 {
     background: url("../image/bgwithqrres.avif")center/cover;
     height: 100vh;
     text-align: center;
   }
-  .text button{
+
+  .text button {
     margin: 0 auto;
     margin-top: 50px;
   }
-  .main-text button{margin-bottom: -40px;}
+
+  .main-text button {
+    margin-bottom: -40px;
+  }
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .div1 {
+    height: 400px;
+
+    & .mobile-grid img {
+      width: 170px;
+      height: 170px;
+    }
+  }
+
+  .icons li,
+  nav {
+    display: none;
+  }
+
+  .dnone {
+    display: initial;
+  }
+
+  .hover-cards {
+    display: none;
+  }
+
+  .swiper-slide1 {
+    background: url("../image/mob3.webp")center/contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+
+    & a,
+    h6 {
+      margin: 0 auto;
+    }
+  }
+
+  .swiper-slide2 {
+    background: url("../image/mob4.webp")center/contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+
+    & a,
+    h6 {
+      margin: 0 auto;
+    }
+  }
+
+  .swiper-slide3 {
+    background: url("../image/mob2.webp")center/contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+
+    & a,
+    h6 {
+      margin: 0 auto;
+    }
+  }
+
+  .swiper-slide4 {
+    background-color: transparent;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    height: 82vh;
+    top: 0;
+    & a,
+    h6 {
+      margin: 0 auto;
+    }
+  }
+
+  .swiper-slide4 img {
+    object-position: right bottom;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+  }
+
+  .swiper-slide5 {
+    background: url("../image/mob1.webp")center/contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+
+    & a,
+    h6 {
+      margin: 0 auto;
+    }
+  }
+
+  .swiper-slide6 {
+    background: url("../image/mob6.webp")center/contain;
+    height: 100vh;
+    background-repeat: no-repeat;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+
+    & a,
+    h6 {
+      margin: 0 auto;
+    }
+  }
 }
