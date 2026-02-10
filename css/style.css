@@ -8,6 +8,28 @@
 body {
   font-family: "SamsungSharpSans", sans-serif !important;
   font-weight: normal;
+  scroll-behavior: smooth;
+}
+
+.upp{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999999;
+}
+
+.upp a {
+  color: #a5a5a5;
+  width: 60px;
+  height: 60px;
+  padding: 3px;
+  background-color: #0000008c;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .conteiner {
@@ -877,9 +899,9 @@ nav a:hover,
 /* bg-photo4 */
 .bg-photo4 {
   background: url("../img/bgph.avif")bottom/cover;
-  height: 95vh;
+  height: 98vh;
   & h2 {
-    padding-top: 20px;
+    padding-top: 105px;
   }
 }
 
@@ -1337,10 +1359,7 @@ nav a:hover,
   }
   .bg-photo4 {
   background: url("../img/bgph.avif")top/cover;
-  height: 100vh;
-  & h2 {
-    padding-top: 70px;
-  }
+  height: 97vh;
 }
 
 }
