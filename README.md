@@ -38,7 +38,7 @@ A responsive landing page project inspired by the Samsung official website. This
 Clone the repository:
 
 ## Bash
-git clone [https://github.com/your-username/samsung-clone.git](https://github.com/your-username/samsung-clone.git)
+git clone https://github.com/FatimaGuseynova/samsung-web.git
 Open the project:
 Simply open index.htm in any modern web browser to view the site.
 
